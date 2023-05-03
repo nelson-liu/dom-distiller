@@ -75,10 +75,5 @@
   sudo -u $user unzip -o -d $tools $zip
   chmod u+x $tools/chromedriver
 
-  conda create -n dom-distiller python=2.7 pip --yes
-  conda activate dom-distiller
-  pip install protobuf selenium==3.141.0
-
-
   rm -rf $tmp
 )
