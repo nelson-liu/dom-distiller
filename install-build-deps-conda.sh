@@ -20,9 +20,6 @@
     ant \
     openjdk-8-jdk \
     protobuf-compiler \
-    # python \
-    # python-setuptools \
-    # python-protobuf \
     unzip \
     wget \
     xdotool \
@@ -78,11 +75,6 @@
   sudo -u $user unzip -o -d $tools $zip
   chmod u+x $tools/chromedriver
 
-  # wget https://pypi.python.org/packages/source/s/selenium/$tar
-  # tar -xf $tar
-  # cd $pkg
-
-  # python setup.py install
   conda create -n dom-distiller python=2.7 pip --yes
   conda activate dom-distiller
   pip install protobuf selenium==3.141.0
